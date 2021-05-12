@@ -1,12 +1,18 @@
 import React, {useState} from "react";
+import Profile from '../Profile/Profile.jsx';
 import "./StartPageForm.css";
 
 function StartPageForm(props) {
+    const [name, setName] = useState('');
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        setName(event.target.githubName.value);
+//###
+    }
     return (
         <div className="start-page-form">
-            {/* <form onSubmit={handleSubmit}> */}
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="githubName">Enter your GitHub username:</label>
                 <input
                     type="text"

@@ -17,7 +17,7 @@ function App() {
       <div className="App_container">
         <div className="App_gameContainer">
           {gameState === "start" && (
-            <StartPageForm/>
+            <StartPageForm setGithubName={setGithubName} GithubName={GithubName}/>
           )}
         </div>
       </div>
