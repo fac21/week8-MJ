@@ -1,0 +1,15 @@
+.start-page-form {
+    border: solid black thin;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
