@@ -1,45 +1,30 @@
 import React, { useState } from 'react'
-import logo from './logo.svg'
+// import logo from './logo.svg'
 import './App.css'
+import StartPageForm from "./StartPageForm/StartPageForm";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
+  const [gameState, setGameState] = useState("start");
+  const [GithubName, setGithubName] = useState("");
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
+        {/* title and logo will go here */}
+        <h1>Example Title</h1>
       </header>
+      <div className="App_container">
+        <div className="App_gameContainer">
+          {gameState === "start" && (
+            <StartPageForm/>
+          )}
+        </div>
+      </div>
     </div>
   )
 }
 
-export default App
+
+
+export default App;
