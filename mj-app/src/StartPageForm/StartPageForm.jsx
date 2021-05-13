@@ -1,15 +1,26 @@
 import React, {useState} from "react";
-import Profile from '../Profile/Profile.jsx';
 import "./StartPageForm.css";
 
 function StartPageForm(props) {
-    const [name, setName] = useState('');
+    // const [name, setName] = useState('');
 
     function handleSubmit(event) {
         event.preventDefault();
-        setName(event.target.githubName.value);
+
+        const USER_URL = `https://api.github.com/users/${props.GithubName}`;
+
+        // setName(event.target.githubName.value);
         props.setGameState("game");
-//###
+
+        fetch(USER_URL)
+            .then((result) => result.json())
+            .then((data) => {
+                props.setGithubImage(data.avatar_url)
+             })
+            .catch((err) => {
+                console.error(err);
+                // some user feedback needed here
+            })
     }
     return (
         <div className="start-page-form">
@@ -23,7 +34,7 @@ function StartPageForm(props) {
                     onChange={(event) => {
                         props.setGithubName(event.target.value);
                     }}
-                    value={props.githubName}
+                    value={props.GithubName}
                     required
                 />
 

@@ -2,15 +2,23 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App_container {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App_gameContainer {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+  width: 100vw;
+  height: 15vh;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;#
 }
 
 .App-header {
@@ -24,7 +32,7 @@
   color: white;
 }
 
-.App-link {
+a {
   color: #61dafb;
 }
 
