@@ -2,14 +2,12 @@ import React, {useState} from "react";
 import "./StartPageForm.css";
 
 function StartPageForm(props) {
-    // const [name, setName] = useState('');
 
     function handleSubmit(event) {
         event.preventDefault();
 
         const USER_URL = `https://api.github.com/users/${props.GithubName}`;
 
-        // setName(event.target.githubName.value);
         props.setGameState("game");
 
         fetch(USER_URL)

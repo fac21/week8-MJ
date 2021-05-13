@@ -5,7 +5,7 @@ function Score(props) {
     return (
         <div className="score">
             <span>
-                Score: {props.score}
+                Score: {props.ScoreValue}
             </span>
         </div>
     );
