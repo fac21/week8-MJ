@@ -16,6 +16,10 @@
     fill: white; 
 }
 
+.hidden {
+  display: none;
+}
+
 @keyframes twinkle {
     0%   { opacity: 1; }
     50%  { opacity: -1; }
