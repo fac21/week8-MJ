@@ -21,9 +21,12 @@ function GameBoard(props) {
 
             if(!event.isTrusted) return;
         
-            //score++;
+            props.setScore(props.score +1)
             this.classList.add('hidden');
             //scoreBoard.textContent = score;
+             if (props.score === ghostArray.length) { 
+                 props.setGameState('results');
+            }
         }
         
         ghosts.forEach(ghost => ghost.addEventListener('click', killGhost));
