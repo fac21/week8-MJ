@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Ghost Game</h1>
+        <h1>VSCode Live Scare</h1>
       </header>
       <main className="App_container">
         <div className="App_gameContainer">

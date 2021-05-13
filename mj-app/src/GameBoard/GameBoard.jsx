@@ -19,9 +19,8 @@ function GameBoard(props) {
 
         function killGhost(event){
             if (!event.isTrusted) return;
-            // console.log("score in ghost kill", props.ScoreValue);
-            props.setScore(props.ScoreValue + 1) // update score
-            // console.log("score in ghost kill", props.ScoreValue);
+            
+            props.setScore((prevScore) => prevScore + 1); //updates score
             event.target.classList.add('hidden'); // hide ghost (TODO: delete ghost permanently)
              
         }
