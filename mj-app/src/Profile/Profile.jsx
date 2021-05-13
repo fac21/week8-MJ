@@ -3,7 +3,7 @@ import React, {useState} from "react";
     const USER_URL = "https://api.github.com/users/";
 
     function Profile({ name }) {
-        const [user, setUser] = React.useState();
+        const [user, setUser] = useState();
       
         React.useEffect(() => {
           fetch(USER_URL + name)

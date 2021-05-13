@@ -1,0 +1,21 @@
+.game-board {
+    background-color: black;
+    height: 500px;
+     width: 400px; /* change this */
+  }
+  
+  .ghost {
+    background-image: url('../../ghost.svg');
+    background-size: cover;
+    
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    fill: white; 
+}
+
+@keyframes twinkle {
+    0%   { opacity: 1; }
+    50%  { opacity: -1; }
+    100% { opacity: 1; }
+  }

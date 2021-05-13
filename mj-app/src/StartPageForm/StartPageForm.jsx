@@ -8,6 +8,7 @@ function StartPageForm(props) {
     function handleSubmit(event) {
         event.preventDefault();
         setName(event.target.githubName.value);
+        props.setGameState("game");
 //###
     }
     return (

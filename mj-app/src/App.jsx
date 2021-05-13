@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-// import logo from './logo.svg'
 import './App.css'
 import StartPageForm from "./StartPageForm/StartPageForm";
+import GameBoard from "./GameBoard/GameBoard";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -17,7 +17,10 @@ function App() {
       <div className="App_container">
         <div className="App_gameContainer">
           {gameState === "start" && (
-            <StartPageForm setGithubName={setGithubName} GithubName={GithubName}/>
+            <StartPageForm setGithubName={setGithubName} GithubName={GithubName} setGameState={setGameState}/>
+          )}
+          {gameState === "game" && (
+            <GameBoard />
           )}
         </div>
       </div>
