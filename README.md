@@ -29,7 +29,7 @@ Inspired by that 1980 classic arcade game, Pac-Man, this is...
 
 User sign up page:
 
-![](https://i.imgur.com/DsQwGIZ.png)
+![image](https://user-images.githubusercontent.com/31373245/118268158-f015b700-b4b4-11eb-95f9-6e08cd857ed3.png)
 
 Game play:
 
