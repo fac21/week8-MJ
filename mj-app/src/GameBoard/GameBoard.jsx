@@ -27,8 +27,9 @@ function GameBoard(props) {
         
         ghosts.forEach(ghost => ghost.addEventListener('click', (e) => {
             killGhost(e);
-            if (props.ScoreValue === ghostArray.length) {
-                 props.setGameState('results'); // end game if all ghosts are killed
+            console.log(props.ScoreValue, ghostArray.length)
+            if (props.ScoreValue == ghostArray.length -1) {
+                 props.setGameState("results"); // end game if all ghosts are killed
             }
         }));
         

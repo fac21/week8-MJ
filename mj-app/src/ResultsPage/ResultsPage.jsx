@@ -1,11 +1,11 @@
 import React from "react";
-// import "./Score.css";
+import "./ResultsPage.css";
 
 function ResultsPage(props) {
     return (
         <div className="results">
-            GAME OVER!
-            <span>Score: { props.ScoreValue}</span>
+            <p className="game-over">GAME OVER!</p>
+            <p className="score-result">Score: { props.ScoreValue}</p>
         </div>
     );
 }

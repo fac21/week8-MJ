@@ -12,7 +12,8 @@ function App() {
   const [GithubName, setGithubName] = useState("");
   const [GithubImage, setGithubImage] = useState(""); // add default user icon here
   const [ScoreValue, setScore] = useState(0);
-  console.log(ScoreValue);
+
+  console.log(gameState)
 
   return (
     <div className="App">
