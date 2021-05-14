@@ -22,7 +22,7 @@ function StartPageForm(props) {
     }
     return (
         <div className="start-page-form">
-            <form onSubmit={handleSubmit}>
+            <form className="stack-sm" onSubmit={handleSubmit}>
                 <label htmlFor="githubName">Enter your GitHub username:</label>
                 <input
                     type="text"
