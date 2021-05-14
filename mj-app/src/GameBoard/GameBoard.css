@@ -1,14 +1,13 @@
 .game-board {
-    /* background-color: black; */
-     background-image: url('../../vscode.png');
+    background-image: url('../../public/vscode.png');
     background-size: cover;
     height: 100%;
-     width: 100%;
-     position: relative;
+    width: 100%;
+    position: relative;
   }
   
   .ghost {
-    background-image: url('../../ghost.svg');
+    background-image: url('../../public/ghost.svg');
     background-size: cover;
     position: absolute;
     height: 40px;
