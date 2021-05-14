@@ -1,6 +1,10 @@
-# README - Week 8
+# Week 8: REACT
 
-Week 8's [project brief](https://learn.foundersandcoders.com/course/syllabus/client-side-app/project/) was to use React to build an interactive game that uses data from an API.
+Our [project brief](https://learn.foundersandcoders.com/course/syllabus/client-side-app/project/) this week was to use React to build an interactive game that uses data from an API.
+
+We used:
+- the Github API
+- whack-a-mole style games as our inspiration
 
 ## Team
 
