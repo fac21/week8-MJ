@@ -1,5 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: black;
 }
 
 .App_container {
@@ -17,7 +28,7 @@
 
 footer {
   width: 100vw;
-  height: 15vh;
+  height: 13vh;
   background-color: #000;
   display: flex;
   justify-content: space-between;
@@ -25,7 +36,7 @@ footer {
 
 .App-header {
   font-family: 'Knewave';
-  background-color: #282c34;
+  background-color: black;
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
@@ -37,10 +48,6 @@ footer {
 
 a {
   color: #61dafb;
-}
-
-.github-user {
-  padding-top: 1rem;
 }
 
 @keyframes App-logo-spin {
