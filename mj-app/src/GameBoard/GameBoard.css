@@ -5,23 +5,8 @@
     width: 100%;
     position: relative;
   }
-  
-  .ghost {
-    background-image: url('../../public/ghost.svg');
-    background-size: cover;
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    fill: white; 
-    /* box-shadow: 1px 1px 1px 1px #0ff; */
-}
 
 .hidden {
   display: none;
 }
 
-@keyframes twinkle {
-    0%   { opacity: 1; }
-    50%  { opacity: -1; }
-    100% { opacity: 1; }
-  }
