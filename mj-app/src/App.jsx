@@ -29,7 +29,7 @@ function App() {
             <GameBoard setGameState={setGameState} ScoreValue={ScoreValue} setScore={setScore}/>
           )}
            {gameState === "results" && (
-            <ResultsPage ScoreValue={ScoreValue}/>
+            <ResultsPage ScoreValue={ScoreValue} setGameState={setGameState} setScore={setScore}/>
           )}
         </div>
       </main>
